@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式布局</title>
+    <style>
+        *{margin: 0px;padding: 0px}
+        #container{width: 800px;height:300px;border: 1px solid #999999;margin: 0 auto}
+        .box1{width: 800px;height: 70px}
+        .boxs1,.boxs2{width: 201px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+        .clearfloat{clear: both}
+        .boxs4{width: 175px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+        .boxs5{width: 370px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+        .boxs7{width: 44px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+        .boxs8{width: 108px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+         .boxs6{width: 99px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+         ;text-align: center; line-height: 48px}
+        @media screen and (max-width: 768px){
+        #container{width: 500px;height: 366px}
+        .boxs1{width: 225px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+        ;text-align: center; line-height: 48px}
+         .boxs2{width: 472px;height: 50px;background: #eeeeee;margin-top: 20px;float: left;margin-left: 20px ;border:1px solid #999999;color: red
+         ;text-align: center; line-height: 48px;}
+         .boxs4{width: 103px;height: 50px;margin-left: 20px ;border:1px solid #999999;color: red
+         ;text-align: center; line-height: 48px;clear: both}
+         .boxs5{width: 226px;height: 50px;}
+         .boxs7{width: 66px;height: 50px;}
+         .boxs8{width: 297px;height: 50px}
+         .box9{width: 104px;height: 50px}
+        }
+    </style>
+<body>
+    <div id="container">
+        <div class="box1">
+            <div class="boxs1 ">四栏</div>
+            <div class="boxs1 ">四栏</div>
+            <div class="boxs2 ">四栏</div>
+        </div>
+        <div class="box1">
+            <div class="clearfloat"></div>
+            <div class="boxs4">三栏</div>
+            <div class="boxs5">六栏</div>
+            <div class="boxs6">三栏</div>
+        </div>
+        <div class="box1">
+            <div class="clearfloat"></div>
+            <div class="boxs7">一栏</div>
+            <div class="boxs7">一栏</div>
+            <div class="boxs8">二栏</div>
+            <div class="clearfloat"></div>
+            <div class="boxs8 box9">二栏</div>
+            <div class="boxs5 box9">六栏</div>
+        </div>
+    </div>
+</body>
+</html>
