@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>焦点轮播图</title>
+</head>
+<style type="text/css">
+	*{padding: 0px;margin: 0px; list-style: none;}
+	.banner{margin:100px auto; width: 550px;height: 294px; overflow: hidden;position: relative;}
+	.banner .img{width: 5000px;position: absolute;left: 0px;top:0px;}
+	.banner .img li{float: left; cursor: pointer;}
+	.banner .num{width: 100%; position:absolute;left:0px;bottom:15px; text-align: center;font-size: 0px}
+	.banner .num li{width: 10px ;height: 10px; background: #cccccc; border-radius: 5px;display: inline-block; margin: 0 3px;}
+	.banner .num .on{background: red}
+	 .banner .btn{width: 30px;height: 50px;background:rgba(0,0,0,0.5);position: absolute; top:50%;cursor: pointer;font-size: 25px;color: #ffffff;line-height: 5s0px;text-align: center;}
+	 .banner  .btn_L{right: 0px;}
+	 .banner .btn_r{left: 0px;}
+</style>
+ <script src="stytle/jquery-3.3.1.min.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function(){
+	  var i = 0;
+	  var clone=$('.banner .img li').first().clone();
+	  $()
+        $('.banner .btn_L').click(function(){
+        	i++;
+        	if(i == 4){
+        	i=0;	
+        	}
+        	$('.img').stop().animate({left:-i*550+'px'},500);
+        	$('.banner .num li').eq(i).addClass('on').siblings().removeClass('on');
+        })
+
+         $('.banner .btn_r').click(function(){
+        	i--;
+        	if(i ==-1){
+        	i=3;	
+        	}
+        	$('.img').stop().animate({left:-i*550+'px'},500);
+        	$('.banner .num li').eq(i).addClass('on').siblings().removeClass('on');
+        })
+
+	})
+</script>
+<body>
+	<div class="banner">
+		<ul class="img" id="uimg">
+			<li><img src="img/img_01.jpg" width="550" height="350"></li>
+			<li><img src="img/img_02.jpg" width="550" height="350"></li>
+			<li><img src="img/img_03.jpg" width="550" height="350"></li>
+			<li><img src="img/img_04.jpg" width="550" height="350"></li>
+		</ul>
+        <ul class="num">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="btn btn_L" >&gt</div>
+		<div class="btn btn_r">&lt</div>
+	</div>
+</body>
+</html>
