@@ -1,0 +1,33 @@
+.top,.nav,.banner,.foot{width: 100%;}
+.top{height: 110px;background: #90D6D8;position: relative;display: flex}
+.top .title{color: #ffffff;height: 110px;float: left;line-height: 97px;flex-grow: 2;}
+.top .word{color: #ffffff;font-size: 30px;}
+.top .btn{margin-left: 28px;float: left;line-height: 97px;flex-grow: 1;}
+.nav{height: 117px;}
+.nav .list {display: flex;margin-left: 59px}
+.nav .list .item{line-height: 100px;float: left;flex-grow: 1;}
+.nav .list .item .item1{color: #929292;font-size: 35px}
+.con{height: 301px;padding-top: 43px}
+.con .tu{display: flex;width: 100%}
+.con .tu .icon-book_icon{flex-grow: 1;font-size: 123px;background: #90D6D8;text-align: center;margin-left: 12px;color: #ffffff;border-radius: 50%;width:175px;height: 175px;line-height: 180px}
+.con .word2{display: flex;width: 100%;}
+.con .word2 .biaoqian{flex-grow: 1;float:left;font-size: 33px;text-align: center}
+hr{width: 100%;height: 20px;}
+.text{display: flex;}
+.text .img2{float: left;flex-grow: 1;border-right: 1px solid #cccccc;margin: 0 auto}
+.title3{margin-left: 72px ;}
+.box1{width: 100%;height: 514px;display: flex}
+.box1 .left{width: 248px;height: 643px ;flex-grow: 1;padding-top: 12px;float: left}
+.box1 .left .img3{margin-top: 20px;margin-left: 60px}
+.box1 .center{width:248px;height: 643px;flex-grow: 1;float: left;}
+.box1 .title4{width: 319px;height: 96px;background: #cccccc;margin-top: 30px;text-align: center;line-height: 81px}
+.box1 .right{width:248px;height: 643px;flex-grow: 1;float: left;}
+.box1 .title4{width: 319px;height: 96px;background: #cccccc;margin-top: 30px;text-align: center;}
+.foot{width: 100%;height: 515px;background: #cccccc;padding-top: 37px}
+.foot .foot_top{width: 100%;height: 248px;background: #ffffff;display: flex;}
+.foot .foot_top .img4{flex-grow: 1;}
+.foot .foot_top .title5{flex-grow: 1;}
+.foot .foot_bottom{width: 100%;height: 248px;background: #ffffff;display: flex;margin-top: 20px}
+.foot .foot_bottom .img4{flex-grow: 1;}
+.foot .foot_bottom .title5{flex-grow: 1;}
+
