@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xxx有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" keywords="xxx有限公司">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/my.css">
+</head>
+<body>
+<div class="container" id="con">
+    <!--公司导航栏-->
+    <nav class="navbar">
+        <!--公司logo-->
+        <div class="col-sm-6 navbar-header">
+            <a class="navbar-brand " href="index.html">xxxxx公司</a>
+        </div>
+        <div class="col-sm-6">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">公司</a></li>
+                <li><a href="">新闻</a></li>
+                <li><a href="">服务</a></li>
+                <li><a href="">荣誉</a></li>
+                <li><a href="#" id="login">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--公司面板-->
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/timg.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="images/img01.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="images/timg%2002.jpg" alt="Third slide">
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span aria-hidden="true">&lsaquo;</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span  aria-hidden="true">&rsaquo;</span>
+        </a>
+    </div>
+        <div class="row" id="jianjie">
+            <div class="col-sm-3 well col-sm-offset-1">
+                <h5><a href="">人才战略</a></h5>
+                <img src="images/people.png" alt="" width="250" height="150" class="item-image">
+                <ul>
+                    <li><p>人才价值是指物化在人才身上的社会一般劳动时间，亦即</p></li>
+                    <li><p>人才提供服务、付出劳动和进行创造性</p></li>
+                    <li><p>从而达到吸引人才、留住人才、激励人才多做贡献的目的</p></li>
+                    <li><p>构与产业结构调查的要求，调整人才的专业结构和能力结构</p></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 well">
+                <h3><a href="">企业文化</a></h3>
+                <img src="images/about.png" alt="" width="250" height="150" class="item-image">
+                <ul>
+                <li><p>是一个组织由其价值观、信念、仪式、符号、处事方式等组成的其</p></li>
+                    <li><p>也称企业职员文化，是与企业文化相对应的文化形态，</p></li>
+                    <li><p>构与产业结构调查的要求，调整人才的专业结构和能力结构</p></li>
+                <li><p>一个企业就会引以为豪，会更积极努力的进取</p></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 well">
+                <h3><a href="">企业文化</a></h3>
+                <img src="images/QQ截图20181015213714.png" alt="" width="250" height="150" class="item-image">
+                <ul>
+                    <li><p>危机意识和团队意识，要让大家清楚地认识企业是全体员工共同的企业/p></li>
+                    <li><p>s每个人都要在自己的工作岗位，工作领域，多做贡一个企业的繁荣昌盛关</p></li>
+                    <li><p>一个企业的繁荣昌盛关系到每一个公司员工的生一个企业的繁荣昌</p></li>
+                    <li><p>要让大家清楚地认识企业是全体员工共同的企</p></li>
+                </ul>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2" id="box">
+                <h1 class="h1 text-center" id="company">关于xxx公司</h1>
+                <p class="word">  xxxxx公司由中国金融界资深人士发起创立，注册资本10000万元，于201
+                    5年1月29日开始从事接受金融机构委托、金融信息居间服务、金融产品外包设计、投资管理、财务咨询、企业营销策划等服务
+                    成为中国投资建设领域权威性、综合性社团组织中的一个团从中共正式出版的“毛泽东选集”五卷上录用的有关这次 ... 这是第一次用中国所有的民主党派的名义，体。公司目前拥有稳健的运
+                    业品牌形象，最大限度的减少了企业的风险和成本，为企业成功转型金融资本市场保驾护航。
+                </p>
+                <script>
+                    //改动信息
+                    var ok = document.getElementById('box');
+                    var h = ok.getElementsByTagName('h1')[0];
+                    var p = ok.getElementsByTagName('p')[0];
+                    h.onmouseenter=function(){
+                        p.innerHTML='全球华人第一狂人”反动言论震撼中共(图) - 中国政坛- 倍可亲';
+                        alert(p.innerHTML);
+                    }
+                    console.log(h.innerHTML);
+                </script>
+            </div>
+        </div>
+        <div class="row" id="from">
+            <form class="form-horizontal col-sm-4 col-sm-offset-4" role="form" >
+                <div class="form-group">
+                    <label for="firstname" class="col-sm-2 control-label">账号</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" placeholder="请输入账号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pass" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pass" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">请记住我
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            var Ob = document.getElementById('login');
+            var oc = document.getElementById('jianjie');
+            var od = document.getElementById('from');
+            var om = document.getElementById('myCarousel')
+            Ob.onclick=function () {
+                //console.log(Ob.innerHTML);
+                oc.style.display='none';
+                od.style.display='block';
+            }
+        </script>
+        <div class="row">
+            <div class="col-sm-12 adrr">
+                <div class="col-sm-8">
+                    <h1 class="h1">把握机遇，共赢天下</h1>
+                    <h1 class="small">即刻与我们取得联系，与万盈睿邦人共同创造财富的明天！腾讯机器人发表“反动言论”被维修– 中国数字时代</h1>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="lianxi">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="row foot">
+                <div class="col-sm-6">
+                    <h1 class="h1 col-sm-offset-1" id="title">xxx公司</h1>
+                    <script>
+                        //改动信息
+                        var Oh = document.getElementById('title');
+                        Oh.innerHTML="<a href='https://www.backchina.com/news/2016/11/29/461602.html'>全球华人第一狂人”反动言论震撼中共(图) - 中国政坛- 倍可亲</a>";
+                        console.log(Oh.innerHTML);
+                    </script>
+                    <p class="col-sm-5 col-sm-offset-1">xxxxxx公司由中国金融界资深人士发起创立，注册资本10000万元，于2015年1月29
+                        日开始从事接受金融机构委托、金融信息居间服务、金融产品外包设计、投资管
+                        理、财务咨询、企业营销策划等服务。
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-4 boy">CopyRight 2016 All Right Reserved 万盈睿邦 京ICP备17029904号-1</div>
+                </div>
+        </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
