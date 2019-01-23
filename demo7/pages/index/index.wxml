@@ -1,0 +1,26 @@
+<swiper 
+indictor-dots="{{indicatorDots}}"
+autoplay="{{autoplay}}"
+interval='{{interval}}'
+duration='{{duration}}'   
+>
+  <block wx:for="{{imgUrls}}">
+     <swiper-item>
+        <image src="{{item}}" class="side-image" width="355" height="150"/>
+     </swiper-item>
+  </block>
+</swiper>
+<view class="list-item">
+    <view class="pro-item" wx:for="{{proList}}">
+     <image src="{{item.logo}}" class="pro-logo"></image>
+     <view class="pro-body" bindtap="chage">
+     <view class="pro-title">{{item.title}}</view>
+     <text class="pro_desc">{{item.desc}}</text>
+     <view class="pro-foot">
+       <image class="btn-default" src="../images/btn_detail.png"></image>
+       <image class="btn-ask" src="../images/btn_ask.png"></image>
+     </view>
+     </view>
+    </view> 
+</view>
+

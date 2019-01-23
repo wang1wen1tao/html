@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "第一个微信小程序",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar":{
+    "selectedColor":"#2e5e86",
+    "list":[{
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"pages/images/ic_home_normal.png",
+        "selectedIconPath":"pages/images/ic_home_pressed.png"
+    },
+    {
+      "pagePath": "pages/join/join",
+      "text": "加入我们",
+      "iconPath": "pages/images/ic_join_normal.png",
+      "selectedIconPath": "pages/images/ic_join_pressed.png"
+    }
+    ]
+  }
+}

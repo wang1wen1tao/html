@@ -1,0 +1,5 @@
+<image src="{{url}}" class="banaer"></image>
+<view class='block' wx:for="{{conlist}}">
+  <view class='block-title'>{{item.title}}</view>
+  <text class='block-desc'>{{item.container}}</text>
+</view>
